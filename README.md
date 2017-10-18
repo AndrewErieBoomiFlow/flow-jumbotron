@@ -1,7 +1,7 @@
 # Flow Jumbotron
 Makes it easy to add a Jumbotron (Hero) to your flows
 
-1. Add input type component to a page. Through the pages meta data edit the "componentType" property to "fileInputBox"
+1. Add input type component to a page. Through the pages meta data edit the "componentType" property to "flowjumbotron"
 2. Create a new player and copy and paste the html player file from the repo or use the following:
 
 ```
@@ -21,7 +21,7 @@ var manywho = {
 
 | Attribute     	| Notes         |
 | ------------- 	|:-------------:|
-| background_image  | jpg, png		|
+| background_image  | URL: jpg, png	|
 | text_color      	| #hex or RGB	|
 | text_align	 	| left, right, center |
 | button_text	 	| String   		|
