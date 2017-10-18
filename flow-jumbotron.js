@@ -1,6 +1,4 @@
-
 (function (manywho) {
-
 
      function getStringAttribute(attributes, name) {
         if (attributes != null &&
@@ -23,6 +21,8 @@
             
             var model = manywho.model.getComponent(this.props.id, this.props.flowKey);
             var cont = document.getElementById(this.props.id+"_content");
+            var btnStyle = " ";
+
             cont.innerHTML = model.content;
            
             if (getStringAttribute(model.attributes, 'background_image') != null) {
@@ -38,10 +38,22 @@
                 document.getElementById(this.props.id).style.textAlign = getStringAttribute(model.attributes, 'text_align');
             }
 
-            if (getStringAttribute(model.attributes, 'button_text') != null) {               
-                document.getElementById(this.props.id + "_button").innerHTML = "<a target='_blank' href="+getStringAttribute(model.attributes, 'button_link')+" class='btn btn-primary btn-lg'>"+getStringAttribute(model.attributes, 'button_text')+"</a>";
+            
+            if(getStringAttribute(model.attributes, 'button_style') != null){
+                btnStyles = " " + getStringAttribute(model.attributes, 'button_style');
+            } else {
+                btnStyle = " btn-primary";
             }
 
+            if(getStringAttribute(model.attributes, 'button_size') != null){
+                btnStyles += " " + getStringAttribute(model.attributes, 'button_size');
+            } else {
+                btnStyle += " btn-lg";
+            }
+
+            if (getStringAttribute(model.attributes, 'button_text') != null) {               
+                document.getElementById(this.props.id + "_button").innerHTML = "<a target='_blank' href="+getStringAttribute(model.attributes, 'button_link')+" class='btn"+btnStyles+"'>"+getStringAttribute(model.attributes, 'button_text')+"</a>";
+            }
 
         },
                
