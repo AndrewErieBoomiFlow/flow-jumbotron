@@ -19,9 +19,12 @@ var manywho = {
 
 ###### Attributes
 
-- background_image
-- text_color
-- text_align
-- button_text
-- button_link
-- button_style
+| Attribute     	| Notes         |
+| ------------- 	|:-------------:|
+| background_image  | jpg, png		|
+| text_color      	| #hex or RGB	|
+| text_align	 	| left, right, center |
+| button_text	 	| String   		|
+| button_link	 	| External Link |
+
+[Demo Flow](https://flow.manywho.com/395cd7c0-bc6c-4270-a44a-d6d2b53007bf/play/FlowJumboTest?flow-id=92d2ddcc-a512-493a-a725-37b70b12a87e&flow-version-id=4000fa6f-db79-4193-a923-179a0119aff4)
