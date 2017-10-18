@@ -29,4 +29,4 @@ var manywho = {
 | button_style      | btn-primary, etc.. |
 | button_size       | btn-sm, btn-lg.. |
 
-[Demo Flow](https://flow.manywho.com/395cd7c0-bc6c-4270-a44a-d6d2b53007bf/play/FlowJumboTest?flow-id=92d2ddcc-a512-493a-a725-37b70b12a87e&flow-version-id=4000fa6f-db79-4193-a923-179a0119aff4)
+[Demo Flow](https://flow.manywho.com/395cd7c0-bc6c-4270-a44a-d6d2b53007bf/play/FlowJumboTest/?flow-id=92d2ddcc-a512-493a-a725-37b70b12a87e)
